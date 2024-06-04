@@ -7,5 +7,6 @@
 </head>
 <body class="bg-gray-950">
     {{$slot}}
+    @vite('resources/js/app.js')
 </body>
 </html>
