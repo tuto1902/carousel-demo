@@ -1,3 +1,3 @@
-import '../../vendor/tuto1902/carousel/resources/dist/carousel'
+import '../../vendor/tuto1902/carousel/resources/js/index'
 import './bootstrap';
 
