@@ -9,6 +9,5 @@
 <body class="dark bg-white dark:bg-gray-950">
     {{$slot}}
     @filamentScripts
-    @vite('resources/js/app.js')
 </body>
 </html>

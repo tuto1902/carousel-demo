@@ -11,6 +11,7 @@ use Filament\Infolists;
 use Filament\Infolists\Infolist;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
+use Tuto1902\InfolistCarousel\Infolists\Components\Carousel;
 
 class InfolistDemo extends Component implements HasInfolists, HasForms
 {
@@ -26,10 +27,15 @@ class InfolistDemo extends Component implements HasInfolists, HasForms
     {
         return $infolist
             ->state([
-                'message' => 'Hello World'
+                'slides' => [
+                    'Slide 1',
+                    'Slide 2',
+                    'Slide 3'
+                ]
             ])
             ->schema([
-                Infolists\Components\TextEntry::make('message')
+                Carousel::make('slides')
+                    ->hiddenLabel()
             ]);
     }
 }

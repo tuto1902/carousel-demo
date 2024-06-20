@@ -9,7 +9,6 @@
         "filament/infolists": "^3.2",
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.9",
-        "tuto1902/carousel": "*",
         "tuto1902/infolist-carousel": "*"
     },
     "require-dev": {
