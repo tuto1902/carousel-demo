@@ -12,6 +12,7 @@ use Filament\Infolists\Infolist;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
 use Tuto1902\InfolistCarousel\Infolists\Components\Carousel;
+use Tuto1902\InfolistCarousel\Infolists\Components\Carousel\CarouselOrientation;
 
 class InfolistDemo extends Component implements HasInfolists, HasForms
 {
@@ -36,6 +37,11 @@ class InfolistDemo extends Component implements HasInfolists, HasForms
             ->schema([
                 Carousel::make('slides')
                     ->hiddenLabel()
+                    ->slideView('components.infolists.carousel.slide')
+                    ->loop()
+                    ->orientation(CarouselOrientation::Vertical)
+                    ->autoplay()
+                    ->delay(2000)
             ]);
     }
 }
