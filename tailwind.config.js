@@ -8,6 +8,7 @@ export default {
     './resources/**/*.blade.php',
     './vendor/tuto1902/carousel/resources/**/*.blade.php',
     './vendor/tuto1902/infolist-carousel/resources/**/*.blade.php',
+    './vendor/tuto1902/infolist-carousel/src/Infolists/Components/**/*.php',
     './app/Filament/**/*.php',
     './resources/views/filament/**/*.blade.php',
     './vendor/filament/**/*.blade.php',
@@ -17,4 +18,3 @@ export default {
   },
   plugins: [],
 }
-
